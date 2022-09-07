@@ -20,24 +20,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqmi_cci",
 	owner: "realme",
 	strip: {
